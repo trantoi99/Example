@@ -1,0 +1,9 @@
+.wrapper--image {
+  padding: 16px;
+  border: 1px solid cyan;
+}
+::ng-deep .ng-image-fullscreen-view .lightbox-wrapper .close {
+  background-image: url("../../../assets/images/close-window-48.png") !important;
+  background-color: transparent !important;
+  border-radius: none !important;
+}

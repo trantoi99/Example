@@ -1,0 +1,20 @@
+<div class="jumbotron">
+  <h1 class="display-3">Child Component</h1>
+  <p class="lead">Jumbo helper text</p>
+  <hr class="my-2">
+  <p>More info</p>
+  <h3>Age : {{age}}</h3>
+  <h3>Married : {{isMarried ? 'Đã Kết Hôn' : 'Chưa Kết Hôn'}}</h3>
+  <h3>Village : {{village}}</h3>
+  <!-- <h3>Ho Ten : {{name}}</h3> -->
+</div>
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="text" class="form-control" [(ngModel)]="txtEmail" [ngModelOptions]="{standalone: true}"
+      (change)="onSubmitForm()">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+
+  <button type="button" class="btn btn-primary" (click)="onSubmitForm()">Send</button>
+</form>

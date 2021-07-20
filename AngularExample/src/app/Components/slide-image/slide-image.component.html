@@ -1,0 +1,9 @@
+<h2>{{titleName}}</h2>
+<div class="wrapper--image">
+  <ng-image-slider #slide [images]="listImages" [infinite]='true' [autoSlide]="1" slideImage='1' [imageSize] ="{width:'25%'}">
+  </ng-image-slider>
+</div>
+<div class="row justify-content-center mt-4">
+  <button class="btn btn-outline-success btn-lg mr-3" (click)="prevImage()">Prev</button>
+  <button class="btn btn-outline-primary btn-lg" (click)="nextImage()">Next</button>
+</div>

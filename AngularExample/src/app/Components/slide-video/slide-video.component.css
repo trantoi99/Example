@@ -1,0 +1,14 @@
+::ng-deep .ng-image-fullscreen-view .lightbox-wrapper .close {
+  background-image: url("../../../assets/images/close-window-48.png") !important;
+  background-color: transparent !important;
+  border-radius: none !important;
+}
+::ng-deep
+  .ng-image-slider
+  .ng-image-slider-container
+  .main
+  .main-inner
+  .img-div
+  .youtube-icon {
+  background-image: url("../../../assets/images/play-button.png") !important;
+}

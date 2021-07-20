@@ -1,0 +1,11 @@
+<div class="container" [style.margin.px]="30">
+  <div class="row">
+    <div class="col-xl-auto">
+      <children [married]="isMarried" [age]="age" [village]='village' (txtEmail)="onGetEmail($event)"></children>
+    </div>
+    <div class="col-xl-auto">
+      <app-user-list [userList]="users"></app-user-list>
+    </div>
+  </div>
+  Dữ Liệu Từ Child Componnet : {{txtEmail}}
+</div>

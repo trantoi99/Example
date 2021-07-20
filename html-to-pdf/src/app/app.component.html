@@ -1,0 +1,24 @@
+<div class="container py-5">
+  <div id = "contenToConvert">
+    <div *ngFor="let item of fakeData , let i = index">
+      <div class="row pb-3">
+        <p>{{item.name}}</p>
+        <div class="col-md-12">
+          <img [src]="item.url" crossOrigin="Anonymous" class="img-fluid" alt="{{item.id}}" id="img{{i}}"/>
+        </div>
+      </div>
+      <div class="row pb-3">
+        <div class="col-3">A</div>
+        <div class="col-3">B</div>
+        <div class="col-3">C</div>
+        <div class="col-3">D</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <a class="btn btn-primary" (click)="download()">Export</a>
+    </div>  
+  </div>
+</div>
+
